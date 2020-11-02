@@ -38,7 +38,7 @@ prefs = {"profile.default_content_setting_values.notifications" : 2}
 options.add_experimental_option("prefs",prefs)
 
 # open WebDriver From PATH
-driver = webdriver.Chrome(r"C:/Users/" + pc_user + "/Desktop/Auto-Comment/chromedriver.exe")
+driver = webdriver.Chrome(r"C:/Users/" + pc_user + "/Desktop/Auto-Comment/chromedriver.exe", options=options)
 driver.implicitly_wait(5)
 
 # Set Window Position & Size
