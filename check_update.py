@@ -19,7 +19,7 @@ def check_up():
     #                       Static Variables & Colors
     # Request From Github Repositories/Project
     session = HTMLSession()
-    req = session.get('https://github.com/AbdallahOfficial/Calculate_your_age/blob/master/Calculate_your_age.py')
+    req = session.get('https://github.com/AbdallahOfficial/Auto-Comment/blob/main/2-%20script.py')
 
     # Locate Attribute By Css Class
     row = req.html.find('.pl-c')[0]
@@ -28,7 +28,7 @@ def check_up():
     rw = row.text.strip()
     print(rw)
     # Open Main File
-    file = open("script.py", "r")
+    file = open("2- script.py", "r")
 
     # Check Version From First Line & Remove Space (If found)
     file = file.readline().strip()
@@ -62,6 +62,6 @@ def check_up():
         copy_code.click()
         code = pyperclip.paste()
         driver.close()
-        with open('new.py', 'w') as f:
+        with open('2- script.py.py', 'w') as f:
             f.write(code)
         print("%s%s Script Updated! %s" % (fg(46), bg(15), attr(0)))
